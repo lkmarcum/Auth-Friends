@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
 
 import Login from "./components/Login";
-import Friends from "./components/Friends";
+import FriendList from "./components/FriendList";
 import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           </li>
         </ul>
         <Route path="/login" component={Login} />
-        <PrivateRoute exact path="/friends" component={Friends} />
+        <PrivateRoute exact path="/friends" component={FriendList} />
       </div>
     </Router>
   );
